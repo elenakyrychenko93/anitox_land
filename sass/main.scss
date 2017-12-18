@@ -481,145 +481,6 @@ $green: #43b12c;
 
 }
 
-//.block-2 {
-//  padding: 130px 20px 75px;
-//  .vantage {
-//    justify-content: space-between;
-//    .circle-vantage {
-//      align-items: center;
-//      .circle:after {
-//        position: absolute;
-//        content: "";
-//        width: 21px;
-//        height: 35px;
-//        left: 0;
-//        right: 0;
-//        top: 0;
-//        bottom: 0;
-//        margin: auto;
-//      }
-//      &:nth-of-type(1) {
-//        .circle:after {
-//          background: url(../images/block-2-icon-1.png) no-repeat;
-//        }
-//      }
-//      &:nth-of-type(2) {
-//        .circle:after {
-//          background: url(../images/block-2-icon-2.png) no-repeat;
-//          width: 29px;
-//        }
-//      }
-//      &:nth-of-type(3) {
-//        .circle:after {
-//          background: url(../images/block-2-icon-3.png) no-repeat;
-//          width: 24px;
-//        }
-//      }
-//      .circle {
-//        width:70px;
-//        height: 70px;
-//        border-radius: 50%;
-//        background: #fd6a6f;
-//        position: relative;
-//
-//
-//      }
-//      span {
-//        font-size: 18px;
-//        line-height: 24px;
-//        display: block;
-//        color:#513532;
-//        margin-left: 20px;
-//
-//      }
-//    }
-//
-//  }
-//  .block-2-content {
-//    max-width: 565px;
-//    margin-top: 50px;
-//    position: relative;
-//    &:after {
-//      position: absolute;
-//      content: "";
-//      width: 974px;
-//      height: 700px;
-//      left: 600px;
-//      top: 16px;
-//      background: url(../images/block-2-book.png) no-repeat;
-//    }
-//    h3 {
-//      font-size: 42px;
-//      line-height: 40px;
-//      color: #513532;
-//      font-weight: bold;
-//      position: relative;
-//      &:after {
-//        position: absolute;
-//        content: "";
-//        width: 30px;
-//        height: 159px;
-//        right: 37px;
-//        top: 56px;
-//        background: url("../images/block-2-arrow.png") no-repeat;
-//      }
-//    }
-//    >p {
-//      margin-top: 30px;
-//      font-size: 18px;
-//      line-height: 24px;
-//      max-width: 471px;
-//      .time-to-use {
-//        color:#fd6a6f;
-//      }
-//    }
-//    .pseudo-elements {
-//      margin-top: 50px;
-//      list-style: none;
-//      .before, .after {
-//        padding-top: 75px;
-//        position: relative;
-//        max-width: 280px;
-//
-//        &:before {
-//          position: absolute;
-//          content: "";
-//          width: 55px;
-//          height: 55px;
-//          left:0;
-//          top:0;
-//        }
-//        >span {
-//          font-weight: 500;
-//          color: #573c39;
-//          font-size: 20px;
-//          line-height: 24px;
-//        }
-//        p {
-//          margin-top: 25px;
-//          color: $gray;
-//          font-size: 16px;
-//          line-height: 26px;
-//        }
-//      }
-//      .before {
-//        border-right: 1px solid #e5e5e5;
-//        padding-right: 58px;
-//      }
-//      .after {
-//        padding-left: 58px;
-//      }
-//      .before:before {
-//        background: url("../images/block-2-no.png") no-repeat;
-//      }
-//      .after:before {
-//        left:58px;
-//        background: url("../images/block-2-yes.png") no-repeat;
-//      }
-//    }
-//  }
-//}
-
 .block-2 {
   padding: 90px 0;
   position: relative;
@@ -825,6 +686,8 @@ $green: #43b12c;
             padding: 20px 0 20px 85px;
             background: white;
             margin-top: 10px;
+            font-size: 18px;
+            font-weight: 600;
           }
         }
       }
@@ -848,7 +711,7 @@ $green: #43b12c;
             line-height: 30px;
             border-radius: 50%;
             top:15px;
-            right:-14px;
+            right:-15px;
             background: #f7de42; /* Old browsers */
             background: -moz-linear-gradient(left, #f7de42 19%, #ffc807 68%); /* FF3.6-15 */
             background: -webkit-linear-gradient(left, #f7de42 19%,#ffc807 68%); /* Chrome10-25,Safari5.1-6 */
@@ -873,17 +736,34 @@ $green: #43b12c;
         li {
           background-image: url("../images/consist-img-2.png");
           background-repeat: no-repeat;
+          &:after {
+            position: absolute;
+            content: "+";
+            font-size: 18px;
+            font-weight: bold;
+            width: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            top:15px;
+            left:-15px;
+            background: #f7de42; /* Old browsers */
+            background: -moz-linear-gradient(left, #f7de42 19%, #ffc807 68%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, #f7de42 19%,#ffc807 68%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, #f7de42 19%,#ffc807 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7de42', endColorstr='#ffc807',GradientType=1 ); /* IE6-9 */
+          }
           &:nth-child(1) {
-            background-position: 15px 8px;
+            background-position: 22px 8px;
           }
           &:nth-child(2) {
-            background-position: 15px -64px;
+            background-position: 22px -64px;
           }
           &:nth-child(3) {
-            background-position: 15px -135px;
+            background-position: 22px -135px;
           }
           &:nth-child(4) {
-            background-position: 15px -203px;
+            background-position: 22px -203px;
           }
         }
       }
