@@ -10,7 +10,7 @@
     var readmore = 'readmore',
         defaults = {
             speed: 100,
-            maxHeight: 200,
+            maxHeight: 500,
             heightMargin: 16,
             moreLink: '<a href="#">Read More</a>',
             lessLink: '<a href="#">Close</a>',
