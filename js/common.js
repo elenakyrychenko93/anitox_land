@@ -1,8 +1,8 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $(".menu").on("click","a", function (event) {
+    $(".menu").on("click", "a", function (event) {
         event.preventDefault();
-        var id  = $(this).attr('href'),
+        var id = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
@@ -13,13 +13,15 @@ $(document).ready(function() {
     var thirdArrow = "div.arrow-3";
     var fourthArrow = "div.arrow-4";
     var fivthArrow = "div.arrow-5";
-    function arrowsAnimation (arg) {
+
+    function arrowsAnimation(arg) {
         $(arg).removeClass("filter");
-        setTimeout(function(){
+        setTimeout(function () {
             $(arg).addClass("filter");
         }, 1000);
 
     }
+
     // var timerId1 = setTimeout(function arrowsAnimation() {
     //     $("div.arrow-1").removeClass("filter");
     //     setTimeout(function(){
@@ -29,18 +31,28 @@ $(document).ready(function() {
     // }, 1000);
     //
 
-    var timerId = setInterval(function() {
-        setTimeout(function() {arrowsAnimation(firstArrow)}, 1000);
-        setTimeout(function() {arrowsAnimation(secondArrow)}, 1500);
-        setTimeout(function() {arrowsAnimation(thirdArrow)}, 2000);
-        setTimeout(function() {arrowsAnimation(fourthArrow)}, 2500);
-        setTimeout(function() {arrowsAnimation(fivthArrow)}, 3000);
+    var timerId = setInterval(function () {
+        setTimeout(function () {
+            arrowsAnimation(firstArrow)
+        }, 1000);
+        setTimeout(function () {
+            arrowsAnimation(secondArrow)
+        }, 1500);
+        setTimeout(function () {
+            arrowsAnimation(thirdArrow)
+        }, 2000);
+        setTimeout(function () {
+            arrowsAnimation(fourthArrow)
+        }, 2500);
+        setTimeout(function () {
+            arrowsAnimation(fivthArrow)
+        }, 3000);
     }, 3500);
 
     // arrows animation--------------------------------------
 
     // open-more
-    $( ".more" ).on( "click", function() {
+    $(".more").on("click", function () {
         $(this).parent(".comment > p").addClass("active");
     });
 
@@ -48,16 +60,6 @@ $(document).ready(function() {
     // $('.slide').click(function () {
     //     that=this;
     // })
-
-    // $('article').readmore({
-    //     maxHeight: 320,
-    //     moreLink: '<a href="#"><</a>',
-    //     lessLink: '<a href="#">-</a>',
-    //     afterToggle: function () {
-    //         $(that).find('.img').toggleClass('hide');
-    //     }
-    // });
-
 
     $('.slider-comments').slick({
         dots: true,
@@ -68,14 +70,7 @@ $(document).ready(function() {
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 480,
+                breakpoint: 900,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -96,6 +91,30 @@ $(document).ready(function() {
     var today = new Date();
     var yr = today.getFullYear();
     $("#date").append(yr);
+
+
+
+    $('.consist div li').on( "click", function() {
+        $(this).toggleClass( "active" );
+    });
+
+
+   setTimeout(() => {
+
+       $('article').readmore({
+           maxHeight: 325,
+           moreLink: '<button class="more"><img src="images/arrow-more.png" alt=""></button>',
+           lessLink: '<button class="more"><img src="images/arrow-more.png" alt=""></button>'
+
+       });
+       $('.comment p').readmore({
+           maxHeight: 110,
+           moreLink: '<button class="more"><img src="images/arrow-more.png" alt=""></button>',
+           lessLink: '<button class="more"><img src="images/arrow-more.png" alt=""></button>'
+
+       });
+   }, )
+
 
 
 

@@ -27,9 +27,23 @@
     padding-right: 20px;
   }
 }
+@media screen and (max-width: 1170px) {
+  .block-5 .doctor-advice {
+    width: 50%;
+    margin-right: 20px;
+  }
+}
 @media screen and (max-width: 1100px) {
+  //.block-1 {
+  //  header {
+  //    .callback {
+  //      display: none;
+  //    }
+  //  }
+  //}
+
   .block-1 {
-    background: #e9f3f6;
+    //background: #e9f3f6;
     position: relative;
     padding-left: 20px;
     &:after {
@@ -43,6 +57,9 @@
     }
     header .menu ul li {
       margin-left: 0;
+    }
+    .callback {
+      display: none;
     }
     //header {
     //  //display: block;
@@ -70,36 +87,79 @@
         display: none;
       }
       .right-block {
-        float: none;
-        margin: 40px auto 0;
-        max-width: 685px;
-        &:after {
-          display: none;
-        }
-        &:before {
-          display: none;
-        }
-        .about-product .prod {
-          left: 271px;
-          top: 262px;
-          width: 148px;
-          height: 223px;
-          background-size: contain;
-          background-repeat: no-repeat;
+        .about-product {
+          max-width: 360px;
+          ul{
+            li {
+              font-size: 16px;
+            }
+          }
+          .prod {
+            left: -247px;
+          }
         }
       }
+      //.right-block {
+      //  float: none;
+      //  margin: 40px auto 0;
+      //  max-width: 685px;
+      //  &:after {
+      //    display: none;
+      //  }
+      //  &:before {
+      //    display: none;
+      //  }
+      //  .about-product .prod {
+      //    left: 271px;
+      //    top: 262px;
+      //    width: 148px;
+      //    height: 223px;
+      //    background-size: contain;
+      //    background-repeat: no-repeat;
+      //  }
+      //}
     }
   }
   .form form .prices .current-price:after {
     border-left: 138px solid transparent;
   }
   .block-2 {
-    .about-infection {
-      .center {
-        display: none;
+    padding-bottom: 20px;
+    .container {
+      .about-infection {
+        margin: auto;
+        div {
+          margin-top: 20px!important;
+          padding: 20px;
+          ul {
+            li {
+              font-size: 15px;
+            }
+          }
+          p {
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+        .center {
+          width: 360px;
+          img {
+            left: -143px;
+          }
+        }
       }
     }
+
   }
+  //.block-2 {
+  //  .about-infection {
+  //    max-width: 830px;
+  //    margin: auto;
+  //    .center {
+  //      display: none;
+  //    }
+  //  }
+  //}
   .block-3 {
     .container {
       .consist {
@@ -124,94 +184,21 @@
         .left {
           margin-right: 40px;
         }
-      }
-    }
-  }
-  .block-4 {
-    .flex-wrapper {
-      > div {
-      }
-      .another-product {
-        padding-right: 20px;
-      }
-    }
-  }
-  .block-9 {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  footer {
-    padding: 50px 20px;
-  }
-}
-
-@media screen and (max-width: 1050px) {
-  .block-3 {
-    .consist {
-      .center {
-        display: none;
-      }
-    }
-  }
-
-
-  .block-4 {
-    .flex-wrapper {
-      > div {
-        .info {
-          font-size: 16px;
-          line-height: 22px;
-          min-height: 130px;
-        }
-      }
-    }
-  }
-
-  .block-8 .slider-comments .slide {
-    margin: 50px 25px;
-    max-width: 100%;
-  }
-  .block-7 .slider-videos .slick-slide {
-    max-width: 100%;
-  }
-  .block-8 .slider-comments .slide .img .pseudo-elements span {
-    margin-left: 33%;
-  }
-  .slick-slide img {
-    margin: 0 auto;
-  }
-  .slick-arrow {
-    display: none!important;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .block-1 {
-    header {
-      .callback {
-        display: none;
-      }
-    }
-  }
-  .block-2 {
-    padding-bottom: 20px;
-    .container {
-      .about-infection {
-        div {
-          margin-top: 20px!important;
-          padding: 20px;
-          ul {
-            li {
-              font-size: 15px;
-            }
+        .center {
+          img{
+            margin-left: 0;
           }
         }
-      }
+       }
     }
-
   }
-
+  //.block-3 {
+  //  .consist {
+  //    .center {
+  //      display: none;
+  //    }
+  //  }
+  //}
   .block-4 {
     .flex-wrapper {
       > div {
@@ -228,15 +215,82 @@
           }
         }
       }
+      .another-product {
+        padding-right: 20px;
+      }
+    }
+  }
+  //.block-4 {
+  //  .flex-wrapper {
+  //    > div {
+  //      .info {
+  //        font-size: 15px;
+  //        line-height: 20px;
+  //      }
+  //      .header-product {
+  //        h2 {
+  //          width: 100%;
+  //          padding-left: 0px;
+  //          margin-top: 30px;
+  //          display: block;
+  //        }
+  //      }
+  //    }
+  //  }
+  //}
+
+  .block-6 {
+    padding: 30px 35px 50px;
+    .slider-comments .slide .author .author-name {
+
+      font-size: 14px;
     }
   }
 
+
+  .block-9 {
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .flex-wrapper {
+      .left .check-form button {
+        margin-top: 20px;
+      }
+      .right {
+        img {
+          height: auto;
+        }
+      }
+    }
+  }
+
+  footer {
+    padding-top: 100px;
+  }
+
+  //footer {
+  //  padding: 50px 20px;
+  //}
+}
+@media screen and (max-width: 1000px) {
   .block-5 {
     padding-bottom: 480px;
     background-position: -746px 536px;
+    .tale-container {
+      &:after {
+        display: none;
+      }
+      .tale {
+        display: none;
+      }
+
+    }
     .doctor-advice {
-      max-width: 100%;
+      max-width: 100%!important;
+      width: 100%;
       padding: 20px;
+      padding-left: 40px;
+      margin-top: 0!important;
       &:before {
         position: absolute;
         content: "";
@@ -250,13 +304,7 @@
         background-size: contain;
         background-repeat: no-repeat;
       }
-    }
-  }
-  .block-6 {
-    padding: 30px 20px 50px;
-    .slider-comments .slide .author .author-name {
 
-      font-size: 14px;
     }
   }
   .block-7 {
@@ -283,7 +331,8 @@
       .flex-wrapper {
         flex-direction: column;
         .img {
-          order: 0;
+          order: 2;
+          margin-top: 20px;
         }
         p {
           margin-top: 20px;
@@ -293,19 +342,6 @@
 
       }
     }
-  }
-  .block-9 {
-    padding-bottom: 100px;
-      .flex-wrapper {
-        .left .check-form button {
-          margin-top: 10px;
-        }
-        .right {
-          img {
-            height: auto;
-          }
-        }
-      }
   }
   .block-10 {
     padding: 20px 0 50px;
@@ -324,11 +360,8 @@
       }
     }
   }
-  footer {
-    padding-top: 100px;
-  }
-
 }
+
 
 @media screen and (max-width: 769px) {
   .block-1 {
@@ -351,45 +384,8 @@
   }
 }
 @media screen and (max-width: 720px) {
-  .block-1 {
-    header {
-      display: block;
-      .logo {
-        width: 290px;
-        margin: auto;
-      }
-      .menu {
-        ul {
-          width: 140px;
-          margin: 20px auto;
-          display: block;
-          text-align: left;
-          li {
-            display: block;
-            padding: 10px 0;
-            &:not(:first-of-type) {
-              margin: 0;
-            }
 
-          }
-        }
-      }
-    }
-  }
-//  .block-2 {
-//    .container {
-//      .about-infection {
-//        .left, .right {
-//          width: 50%;
-//        }
-//      }
-//
-//    }
-//}
-
-
-  //@media screen and (max-width: 670px) {
-  //}
+}
   @media screen and (max-width: 695px) {
     h1 {
       padding: 0 20px;
@@ -400,10 +396,24 @@
     .block-1 {
       padding-bottom: 0;
       header {
+        display: block;
+        .logo {
+          width: 290px;
+          margin: auto;
+        }
         .menu {
           ul {
+            width: 140px;
+            margin: 20px auto;
+            display: block;
+            text-align: left;
             li {
               font-size: 12px;
+              display: block;
+              padding: 10px 0;
+              &:not(:first-of-type) {
+                margin: 0;
+              }
             }
             li:not(:first-of-type) {
               margin-left: 30px;
@@ -498,7 +508,7 @@
             ul {
               margin-top: 20px;
               li {
-                margin-right: 10px;
+                margin-right: 0px;
                 &:after {
                   top: 15px;
                   left: -15px;
@@ -522,6 +532,7 @@
         flex-direction: column;
         div {
           width: 100%;
+          .info {min-height: auto}
           .header-product {
             text-align: center;
 
@@ -533,7 +544,10 @@
       padding-top: 85px;
       .doctor-advice {
         margin-top: 0;
-        padding: 0 20px;
+        padding-top:0px;
+        p {
+          padding-top: 20px!important;
+        }
       }
     }
     .block-6 {
@@ -541,8 +555,26 @@
         margin-top: 30px;
       }
     }
+    .block-8 {
+      .container{
+        > p {
+          font-size: 14px;
+          font-weight: bold;
+          padding: 19px 0 19px 40px;
+          &:before {
+            left: -21px;
+            top: -5px;
+          }
+        }
+      }
+    }
     .block-9 {
       margin-bottom: 0;
+        .flex-wrapper {
+          .right {
+            display: none;
+          }
+        }
     }
     footer {
       padding: 30px 20px;
@@ -583,7 +615,6 @@
         }
       }
     }
-    //.block-2 .block-2-content .pseudo-elements .after:before
     .block-2 {
       .block-2-content {
         h3 {
@@ -628,9 +659,87 @@
         }
       }
     }
-  }
+    .block-5 {
+      background-position: -739px 737px;
+    }
 
-  @media screen and (max-width: 479px) {
+    .block-1 {
+      .block1-content {
+        .right-block {
+          .about-product {
+            p {
+              font-size: 19px;
+              line-height: 23px;
+            }
+          }
+        }
+      }
+    }
+    .block-2 {
+      padding-top: 50px;
+      .container {
+        > p {
+          margin-top: 0;
+        }
+        .about-infection {
+          div {
+            padding-top: 0;
+          }
+        }
+      }
+    }
+    .block-6 .slider-comments .slide .author {
+      display: block;
+      margin: auto;
+      width: auto;
+    }
+    .block-6 .slider-comments .slide .comment {
+      padding-left: 0;
+      width: 100%;
+      padding-top: 20px;
+    }
+    .block-7 {
+      padding: 86px 0 82px;
+      .how-work {
+        margin-top: 20px;
+        .how-use:before {
+          display: none;
+        }
+      }
+
+    }
+    .block-8 {
+      .container {
+        > p {
+          font-size: 14px;
+          padding-left: 70px;
+          padding-right: 10px;
+          &:before {
+            left: 2px;
+            top: 4px;
+          }
+        }
+      }
+    }
+    .block-8 .container .flex-wrapper p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .block-9 {
+      padding-top: 85px;
+      .flex-wrapper .left p {
+        padding-left: 10px;
+        font-size: 16px;
+      }
+    }
+    .block-10 .container > p {
+      padding:0 10px;
+    }
+    .block-1 .block1-content .right-block {
+      margin-top: 0px;
+    }
+
+
     h1 {
       font-size: 24px!important;
       line-height: 30px!important;
@@ -653,8 +762,7 @@
                 left: 0;
                 width: 100%;
                 margin-top: 20px;
-                background: none;
-                height: auto;
+                background-position: center center;
                 img {
                   display: block;
                   width: 100%;
@@ -667,9 +775,6 @@
 
     }
 
-    //.block-1 .block1-content .right-block > .flex-wrapper .form {
-    //  margin-top: 20px;
-    //}
     .form form .prices .old-price .price .x_price_previous, .form form .prices .old-price .price .x_price_current, .form form .prices .current-price .price .x_price_previous, .form form .prices .current-price .price .x_price_current {
       font-size: 30px;
     }
@@ -724,6 +829,18 @@
     .block-2 .block-2-content .pseudo-elements .before, .block-2 .block-2-content .pseudo-elements .after {
       margin: auto;
     }
+    .block-6 .slider-comments .slide {
+      padding: 20px 10px 10px 10px;
+    }
+    .block-6 .comment:after {
+      width: 95%;
+    }
+    .block-6 .more {
+      margin-top: 17px;
+    }
+    .block-6 .slider-comments .slide .comment p {
+      font-size: 14px;
+    }
 
     footer .flex-wrapper {
       flex-direction: column;
@@ -748,12 +865,11 @@
 
       }
 
-
     }
   }
 
   * {
     outline: none;
   }
-}
+
 
