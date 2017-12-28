@@ -173,6 +173,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
       .old-price {
         border-top-left-radius: 10px;
         background: $blue;
+        overflow: hidden;
         &:after {
           position: absolute;
           content: "";
@@ -181,7 +182,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
           bottom:0;
           left:0;
           border-bottom: 15px solid white;
-          border-right: 137px solid transparent;
+          border-right: 138px solid transparent;
         }
         .price {
           position: relative;
@@ -201,6 +202,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
       .current-price {
         border-top-right-radius: 10px;
         background: $green;
+        overflow: hidden;
         &:after {
           position: absolute;
           content: "";
@@ -209,7 +211,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
           bottom:0;
           left:0;
           border-bottom: 15px solid white;
-          border-left: 137px solid transparent;
+          border-left: 138px solid transparent;
         }
         .x_price_current {
           font-weight: bold;
@@ -256,7 +258,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
 .block-1 {
   background: url(../images/back-pet.png) no-repeat top center;
   position: relative;
-  padding: 20px 20px 120px 0;
+  padding: 20px 10px 120px 10px;
   //background-image: url("../images/block-1-backgr.png");
   //padding: 20px 20px 120px 0;
   //position: relative;

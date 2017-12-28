@@ -155,7 +155,8 @@ strong {
       .form form .prices .old-price {
         -webkit-border-top-left-radius: 10px;
         border-top-left-radius: 10px;
-        background: #2a98c6; }
+        background: #2a98c6;
+        overflow: hidden; }
         .form form .prices .old-price:after {
           position: absolute;
           content: "";
@@ -164,7 +165,7 @@ strong {
           bottom: 0;
           left: 0;
           border-bottom: 15px solid white;
-          border-right: 137px solid transparent; }
+          border-right: 138px solid transparent; }
         .form form .prices .old-price .price {
           position: relative; }
           .form form .prices .old-price .price:before {
@@ -180,7 +181,8 @@ strong {
       .form form .prices .current-price {
         -webkit-border-top-right-radius: 10px;
         border-top-right-radius: 10px;
-        background: #43b12c; }
+        background: #43b12c;
+        overflow: hidden; }
         .form form .prices .current-price:after {
           position: absolute;
           content: "";
@@ -189,7 +191,7 @@ strong {
           bottom: 0;
           left: 0;
           border-bottom: 15px solid white;
-          border-left: 137px solid transparent; }
+          border-left: 138px solid transparent; }
         .form form .prices .current-price .x_price_current {
           font-weight: bold;
           font-size: 28px !important; }
@@ -231,7 +233,7 @@ strong {
 .block-1 {
   background: url(../images/back-pet.png) no-repeat top center;
   position: relative;
-  padding: 20px 20px 120px 0; }
+  padding: 20px 10px 120px 10px; }
   .block-1 header {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1427,20 +1429,17 @@ footer {
   .block-5 {
     background-position: -646px -81px; }
     .block-5 .doctor-advice {
-      max-width: 50%; }
+      width: 50%;
+      margin-right: 20px; }
   .block-8 {
     padding-left: 20px;
-    padding-right: 20px; } }
-
-@media screen and (max-width: 1170px) {
-  .block-5 .doctor-advice {
-    width: 50%;
-    margin-right: 20px; } }
+    padding-right: 20px; }
+  footer {
+    padding: 100px 10px 30px; } }
 
 @media screen and (max-width: 1100px) {
   .block-1 {
-    position: relative;
-    padding-left: 20px; }
+    position: relative; }
     .block-1:after {
       position: absolute;
       content: "";
@@ -1461,6 +1460,8 @@ footer {
         font-size: 16px; }
       .block-1 .block1-content .right-block .about-product .prod {
         left: -247px; }
+    .block-1 .block1-content .right-block .form {
+      margin-top: 0 !important; }
   .form form .prices .current-price:after {
     border-left: 138px solid transparent; }
   .block-2 {
@@ -1507,6 +1508,8 @@ footer {
     padding: 30px 35px 50px; }
     .block-6 .slider-comments .slide .author .author-name {
       font-size: 14px; }
+  .block-7 .how-work img {
+    padding: 20px; }
   .block-9 {
     padding-bottom: 100px;
     padding-left: 20px;
@@ -1519,6 +1522,31 @@ footer {
     padding-top: 100px; } }
 
 @media screen and (max-width: 1000px) {
+  .block-1 {
+    background: #e9f3f6;
+    padding-bottom: 270px; }
+    .block-1 .block1-content .right-block {
+      float: none;
+      margin: 40px auto 0;
+      max-width: 685px; }
+      .block-1 .block1-content .right-block:after {
+        display: none; }
+      .block-1 .block1-content .right-block:before {
+        display: none; }
+      .block-1 .block1-content .right-block .about-product .prod {
+        left: 208px;
+        top: 324px;
+        width: 250px;
+        height: 350px;
+        -o-background-size: contain;
+        background-size: contain;
+        background-repeat: no-repeat; }
+  .block-2 .container .about-infection {
+    max-width: 865px; }
+    .block-2 .container .about-infection .center {
+      display: none; }
+  .block-3 .container .consist .center {
+    display: none; }
   .block-5 {
     padding-bottom: 480px;
     background-position: -746px 536px; }
@@ -1561,7 +1589,7 @@ footer {
       content: "";
       width: 253px;
       height: 407px;
-      left: 256px;
+      left: 283px;
       top: -400px;
       background: url(../images/product-shadow.png) no-repeat; }
   .block-8 {
@@ -1658,7 +1686,7 @@ footer {
         .block-1 .block1-content .right-block > .flex-wrapper .about-product ul {
           margin-bottom: 340px; }
         .block-1 .block1-content .right-block > .flex-wrapper .about-product .prod {
-          top: 291px;
+          top: 325px;
           left: 0;
           right: 0;
           margin: auto;
@@ -1691,7 +1719,8 @@ footer {
   .block-3 .container h1 {
     margin-top: 30px; }
   .block-3 .container .consist {
-    margin-top: 0;
+    max-width: 400px;
+    margin: 0 auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1709,6 +1738,8 @@ footer {
           .block-3 .container .consist div ul li:after {
             top: 15px;
             left: -15px; }
+          .block-3 .container .consist div ul li.active p {
+            text-align: left; }
       .block-3 .container .consist div p {
         text-align: center; }
       .block-3 .container .consist div span {

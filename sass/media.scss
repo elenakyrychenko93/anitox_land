@@ -19,33 +19,23 @@
   .block-5 {
     background-position: -646px -81px;
     .doctor-advice {
-      max-width: 50%;
+      width: 50%;
+      margin-right: 20px;
     }
   }
   .block-8 {
     padding-left: 20px;
     padding-right: 20px;
   }
-}
-@media screen and (max-width: 1170px) {
-  .block-5 .doctor-advice {
-    width: 50%;
-    margin-right: 20px;
+  footer {
+    padding: 100px 10px 30px;
   }
 }
-@media screen and (max-width: 1100px) {
-  //.block-1 {
-  //  header {
-  //    .callback {
-  //      display: none;
-  //    }
-  //  }
-  //}
 
+@media screen and (max-width: 1100px) {
   .block-1 {
     //background: #e9f3f6;
     position: relative;
-    padding-left: 20px;
     &:after {
       position: absolute;
       content: "";
@@ -98,26 +88,10 @@
             left: -247px;
           }
         }
+        .form {
+          margin-top: 0!important;
+        }
       }
-      //.right-block {
-      //  float: none;
-      //  margin: 40px auto 0;
-      //  max-width: 685px;
-      //  &:after {
-      //    display: none;
-      //  }
-      //  &:before {
-      //    display: none;
-      //  }
-      //  .about-product .prod {
-      //    left: 271px;
-      //    top: 262px;
-      //    width: 148px;
-      //    height: 223px;
-      //    background-size: contain;
-      //    background-repeat: no-repeat;
-      //  }
-      //}
     }
   }
   .form form .prices .current-price:after {
@@ -149,17 +123,7 @@
         }
       }
     }
-
   }
-  //.block-2 {
-  //  .about-infection {
-  //    max-width: 830px;
-  //    margin: auto;
-  //    .center {
-  //      display: none;
-  //    }
-  //  }
-  //}
   .block-3 {
     .container {
       .consist {
@@ -192,13 +156,6 @@
        }
     }
   }
-  //.block-3 {
-  //  .consist {
-  //    .center {
-  //      display: none;
-  //    }
-  //  }
-  //}
   .block-4 {
     .flex-wrapper {
       > div {
@@ -238,7 +195,6 @@
   //    }
   //  }
   //}
-
   .block-6 {
     padding: 30px 35px 50px;
     .slider-comments .slide .author .author-name {
@@ -246,8 +202,9 @@
       font-size: 14px;
     }
   }
-
-
+  .block-7 .how-work img {
+    padding: 20px;
+  }
   .block-9 {
     padding-bottom: 100px;
     padding-left: 20px;
@@ -263,16 +220,57 @@
       }
     }
   }
-
   footer {
     padding-top: 100px;
   }
-
-  //footer {
-  //  padding: 50px 20px;
-  //}
 }
 @media screen and (max-width: 1000px) {
+  .block-1 {
+    background: #e9f3f6;
+    padding-bottom: 270px;
+    .block1-content {
+      .right-block {
+        float: none;
+        margin: 40px auto 0;
+        max-width: 685px;
+        &:after {
+          display: none;
+        }
+        &:before {
+          display: none;
+        }
+        .about-product .prod {
+          left: 208px;
+          top: 324px;
+          width: 250px;
+          height: 350px;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
+      }
+    }
+
+  }
+  .block-2 {
+    .container {
+      .about-infection {
+        max-width: 865px;
+        .center {
+          display: none;
+        }
+      }
+    }
+  }
+  .block-3 {
+    .container {
+      .consist {
+        .center {
+          display: none;
+        }
+      }
+    }
+  }
   .block-5 {
     padding-bottom: 480px;
     background-position: -746px 536px;
@@ -319,7 +317,7 @@
         content: "";
         width: 253px;
         height: 407px;
-        left: 256px;
+        left: 283px;
         top: -400px;
         background: url(../images/product-shadow.png) no-repeat;
       }
@@ -438,7 +436,7 @@
                 margin-bottom: 340px;
               }
               .prod {
-                top: 291px;
+                top: 325px;
                 left: 0;
                 right: 0;
                 margin: auto;
@@ -500,7 +498,8 @@
           margin-top: 30px;
         }
         .consist {
-          margin-top: 0;
+          max-width: 400px;
+          margin: 0 auto;
           flex-direction: column;
           div {
             margin-top: 20px;
@@ -512,6 +511,11 @@
                 &:after {
                   top: 15px;
                   left: -15px;
+                }
+                &.active {
+                  p {
+                    text-align: left;
+                  }
                 }
               }
             }
