@@ -160,8 +160,8 @@
     .flex-wrapper {
       > div {
         .info {
-          font-size: 15px;
-          line-height: 20px;
+          font-size: 17px;
+          line-height: 24px;
         }
         .header-product {
           h2 {
@@ -212,6 +212,7 @@
     .flex-wrapper {
       .left .check-form button {
         margin-top: 20px;
+        margin-right: 20px;
       }
       .right {
         img {
@@ -271,9 +272,22 @@
       }
     }
   }
+  .block-4 {
+    .flex-wrapper {
+      > div {
+        .info {
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  .block-4 .flex-wrapper > div .info {
+    min-height: 190px;
+  }
   .block-5 {
     padding-bottom: 480px;
-    background-position: -746px 536px;
+    background-position: -695px 457px;
     .tale-container {
       &:after {
         display: none;
@@ -287,7 +301,7 @@
       max-width: 100%!important;
       width: 100%;
       padding: 20px;
-      padding-left: 40px;
+      margin-right: 0;
       margin-top: 0!important;
       &:before {
         position: absolute;
@@ -376,17 +390,76 @@
       }
     }
   }
+  .block-4 {
+    padding-top: 30px;
+    .flex-wrapper {
+      flex-direction: column;
+      .another-product {
+        margin-right: 0;
+        padding-right: 0;
+        border-right: none;
+      }
+      .our-product {
+        .info {
+          margin-top: 40px;
+        }
+      }
+      div {
+        width: 100%;
+        .info {
+          min-height: auto;
+          &:after {
+            left: 0;
+            right: 0;
+            margin: auto;
+          }
+        }
+        .header-product {
+          text-align: center;
+
+        }
+      }
+    }
+  }
   footer {
     font-size: 12px;
     line-height: 18px;
   }
 }
 @media screen and (max-width: 720px) {
+  .block-2 {
+    .container {
+      .about-infection  {
+        flex-direction: column;
+        .left {
+          margin: auto;
+          li {
+            padding-left: 40px;
+            padding-right: 0;
+            text-align: left;
+            &:before {
+              left: -3px;
+            }
+          }
+        }
+        .right {
+          margin: auto;
+        }
+        div {
+          margin-top: 0px!important;
+          p {
+            text-align: left;
+          }
+        }
+      }
+    }
 
+  }
 }
   @media screen and (max-width: 695px) {
     h1 {
       padding: 0 20px;
+      margin: auto;
     }
     h2 {
       padding-left: 20px;
@@ -401,20 +474,18 @@
         }
         .menu {
           ul {
-            width: 140px;
+            width: 250px;
             margin: 20px auto;
-            display: block;
             text-align: left;
             li {
               font-size: 12px;
-              display: block;
               padding: 10px 0;
               &:not(:first-of-type) {
                 margin: 0;
               }
             }
             li:not(:first-of-type) {
-              margin-left: 30px;
+              margin-left: 50px;
             }
           }
         }
@@ -424,6 +495,10 @@
           h1 {
             font-size: 28px;
             line-height: 28px;
+            text-align: center;
+            span {
+              display: inline;
+            }
           }
           h2 {
             max-width: 100%;
@@ -431,7 +506,7 @@
           > .flex-wrapper {
             display: block;
             .about-product {
-              margin: 20px auto;
+              margin: 20px auto 70px;
               ul {
                 margin-bottom: 340px;
               }
@@ -451,34 +526,7 @@
         }
       }
     }
-    .block-2 {
-      .container {
-        .about-infection  {
-          flex-direction: column;
-          .left {
-            margin: auto;
-            li {
-              padding-left: 40px;
-              padding-right: 0;
-              text-align: left;
-              &:before {
-                left: -3px;
-              }
-            }
-          }
-          .right {
-            margin: auto;
-          }
-          div {
-            margin-top: 0px!important;
-              p {
-              text-align: left;
-            }
-          }
-        }
-      }
 
-    }
     //.block-2 {
     //  padding: 20px 20px 75px;
     //}
@@ -530,30 +578,29 @@
         }
       }
     }
-    .block-4 {
-      padding-top: 30px;
-      .flex-wrapper {
-        flex-direction: column;
-        div {
-          width: 100%;
-          .info {min-height: auto}
-          .header-product {
-            text-align: center;
 
-          }
-        }
-      }
-    }
     .block-5 {
+      background: #e7f2f5;
       padding-top: 85px;
+      .more {margin-left: 20px;}
       .doctor-advice {
         margin-top: 0;
-        padding-top:0px;
+        padding:0px;
+        .doctor-info {
+          margin-left: 20px;
+        }
+        article:after {
+          background: -moz-linear-gradient(top, rgba(0,0,0,0) 1%, rgba(0,0,0,0.01) 2%, rgba(231,242,245,0.99) 99%, rgba(231,242,245,1) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(top, rgba(0,0,0,0) 1%,rgba(0,0,0,0.01) 2%,rgba(231,242,245,0.99) 99%,rgba(231,242,245,1) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom, rgba(0,0,0,0) 1%,rgba(0,0,0,0.01) 2%,rgba(231,242,245,0.99) 99%,rgba(231,242,245,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#e7f2f5',GradientType=0 ); /* IE6-9 */
+        }
         p {
-          padding-top: 20px!important;
+          padding: 20px 20px 0!important;
         }
       }
     }
+    .block-5 article:after {}
     .block-6 {
       .slider-comments {
         margin-top: 30px;
@@ -664,7 +711,7 @@
       }
     }
     .block-5 {
-      background-position: -739px 737px;
+      background-position: -695px 408px;
     }
 
     .block-1 {
@@ -716,8 +763,8 @@
       .container {
         > p {
           font-size: 14px;
-          padding-left: 70px;
-          padding-right: 10px;
+          padding-left: 90px;
+          padding-right: 40px;
           &:before {
             left: 2px;
             top: 4px;
@@ -845,6 +892,9 @@
     .block-6 .slider-comments .slide .comment p {
       font-size: 14px;
     }
+    .block-8 .container .flex-wrapper p {
+      max-width: 100%;
+    }
 
     footer .flex-wrapper {
       flex-direction: column;
@@ -871,6 +921,38 @@
 
     }
   }
+@media screen and (max-width: 479px) {
+  .block-1 {
+    header {
+      .menu {
+        ul {
+          width: 200px;
+          display: block;
+          li {
+            padding-left: 50px;
+            display: block;
+            &:not(:first-of-type) {
+              margin: 0;
+            }
+          }
+          li:not(:first-of-type) {
+            margin-left: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .block-8 .container > p{
+    margin: 20px auto 10px;
+    padding-left: 75px;
+    padding-right: 30px;
+    &:before {
+      top:10px;
+    }
+  }
+}
 
   * {
     outline: none;

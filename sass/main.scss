@@ -15,8 +15,9 @@ strong {
   width: 100%;
   overflow: hidden;
 }
-$blue: #2a98c6;
-$gray: #666666;
+$blue: #06a9cf;
+$blue-backgr: #e7f2f5;
+$gray: #737373;
 $gray-text:#444444;
 $green: #43b12c;
 $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
@@ -69,14 +70,15 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
     background: url("../images/discount.png") center center no-repeat;
     background-size: contain;
     width: 80px;
-    line-height: 80px;
+    height: 80px;
     text-align: center;
     position: absolute;
-    top:-55px;
+    top: -55px;
     right: 0px;
     left: 0px;
     margin: auto;
-    font-size: 24px;
+    padding-top: 25px;
+    font-size: 19px;
     font-weight: bold;
     color: #ffba01;
     z-index: 10;
@@ -121,6 +123,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7e041', endColorstr='#fec502',GradientType=1 ); /* IE6-9 */
       font-size: 28px;
       font-weight: bold;
+      box-shadow: 2px 2px 9px 1px #cc95025c;
       //box-shadow: 0px 0px 10px 1px rgba(253, 91, 97, 0.5);
       //font-family: 'Roboto Bold';
     }
@@ -250,6 +253,13 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
     font-size: 40px;
     line-height: 40px;
     text-align: center;
+    padding: 0 10px;
+    span:not(.blue) {
+      display: block;
+    }
+  }
+  >p {
+    padding: 0 15px;
   }
 }
 * {
@@ -282,7 +292,9 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
   //  z-index: 2;
   //  background: url(../images/wave-bottom.png);
   //}
-
+  h1 .blue{
+    white-space: nowrap;
+  }
   header {
     display: flex;
     justify-content: space-between;
@@ -291,7 +303,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
       display: flex;
       align-items: center;
       .logo-name {
-        color: #2a98c6;
+        color: $blue;
         font-size: 28px;
         text-transform: uppercase;
         font-weight: bold;
@@ -302,7 +314,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
         line-height: 16px;
         max-width: 170px;
         margin-left: 20px;
-        color: $gray;
+        color: #838586;
       }
     }
     .menu {
@@ -541,7 +553,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
       content: "";
       width: 0;
       height: 0;
-        top:-10px;
+        top:-9px;
         left:0;
         right:0;
         margin: auto;
@@ -646,7 +658,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
 }
 
 .block-3 {
-  background-color: #e9f3f6;
+  background-color: $blue-backgr;
   background-image: url("../images/block-3-backgr.png");
   position: relative;
   padding: 50px 0 100px;
@@ -831,17 +843,18 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
 .block-4 {
   padding: 90px 0;
   .flex-wrapper {
+    margin-top: 35px;
     >div {
       width: 50%;
       .info {
         position: relative;
-        margin-top: 35px;
         font-size: 18px;
         line-height: 28px;
         color: $gray-text;
         padding-left: 60px;
+        padding-right: 40px;
         padding-bottom: 30px;
-        min-height: 169px;
+        min-height: 190px;
         &:before {
           position: absolute;
           content: "";
@@ -920,6 +933,8 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
           &:before {
             position: absolute;
             content: "";
+            display: inline-block;
+            vertical-align: middle;
             width: 47px;
             height: 42px;
             top: 0px;
@@ -930,6 +945,8 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
       }
     }
     .another-product {
+      margin-right: 40px;
+      border-right: 1px solid #ebebeb;
       ul {
         list-style: none;
         li {
@@ -955,7 +972,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
 }
 
 .block-5 {
-  background-color: #e9f3f6;
+  background-color: $blue-backgr;
   background-image: url("../images/block-5-backgr.png");
   background-repeat: no-repeat;
   background-position: -559px -81px;
@@ -1071,7 +1088,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
 
 }
 .block-6 {
-  padding: 90px 0;
+  padding: 90px 40px;
   h1 {
     span:first-of-type {
       display: block;
@@ -1096,6 +1113,9 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
         font-weight: bold;
         .author-name {
           margin-top: 15px;
+          span.age {
+            white-space: nowrap;
+          }
         }
       }
       .comment {
@@ -1116,7 +1136,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
             width: 100%;
             height: 60px;
             left:0;
-            bottom: 0;
+            bottom: -14px;
             background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.77) 32%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
             background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.77) 32%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
             background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.77) 32%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -1133,7 +1153,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
 }
 
 .block-7 {
-  background-color: #e9f3f6;
+  background-color: $blue-backgr;
   position: relative;
   padding: 120px 0 135px;
   &:before {
@@ -1185,6 +1205,9 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
           color: $gray-text;
           position: relative;
           padding-left: 75px;
+          span {
+            display: block;
+          }
           &:not(:last-of-type) {
             border-bottom: 1px solid #d4dcdf;
           }
@@ -1212,6 +1235,11 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
 }
 .block-8 {
   padding: 90px 0;
+  h1 {
+    span:not(.blue) {
+      display: block;
+    }
+  }
   .container {
     >p {
       max-width: 670px;
@@ -1251,17 +1279,17 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
 
 }
 .block-9 {
-  background-color: #e9f3f6;
+  background-color: $blue-backgr;
   background-image: url("../images/block-3-backgr.png");
   background-repeat: no-repeat;
   background-position: -559px -81px;
   position: relative;
-  padding: 120px 0 0;
+  padding: 120px 0 50px;
   &:before {
     position: absolute;
     content: "";
     width: 100%;
-    height: 51px;
+    height: 67px;
     top:0;
     left:0;
     background: url(../images/wave-top.png);
@@ -1271,7 +1299,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
     position: absolute;
     content: "";
     width: 100%;
-    height: 85px;
+    height: 110px;
     bottom: 0;
     left: 0;
     z-index: 9;
@@ -1282,7 +1310,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
     .right {
       position: relative;
       img {
-        height: 500px;
+        height: 430px;
       }
       .product-code {
         position: absolute;
@@ -1344,11 +1372,13 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
           width: 250px;
           font-size: 22px;
           font-weight: bold;
-          background: #f7e041; /* Old browsers */
-          background: -moz-linear-gradient(left, #f7e041 20%, #fec502 98%); /* FF3.6-15 */
-          background: -webkit-linear-gradient(left, #f7e041 20%,#fec502 98%); /* Chrome10-25,Safari5.1-6 */
-          background: linear-gradient(to right, #f7e041 20%,#fec502 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7e041', endColorstr='#fec502',GradientType=1 ); /* IE6-9 */
+          background: $gradient;
+          //background: #f7e041; /* Old browsers */
+          //background: -moz-linear-gradient(left, #f7e041 20%, #fec502 98%); /* FF3.6-15 */
+          //background: -webkit-linear-gradient(left, #f7e041 20%,#fec502 98%); /* Chrome10-25,Safari5.1-6 */
+          //background: linear-gradient(to right, #f7e041 20%,#fec502 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7e041', endColorstr='#fec502',GradientType=1 ); /* IE6-9 */
+          box-shadow: 2px 2px 9px 1px #cc95025c;
         }
         .check__result {
           padding: 15px;
@@ -1374,6 +1404,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
       line-height: 26px;
       max-width: 790px;
       margin: 50px auto 0;
+      padding: 0 10px;
     }
     .order {
       margin-top: 50px;
@@ -1423,7 +1454,8 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
       }
       .circle:nth-of-type(1) .border-3 {
         background-image: url("../images/block-10-form.png");
-        background-position: center center;
+        background-position: -25px -61px;
+        background-size: 127%;
         background-repeat: no-repeat;
       }
       .circle:nth-of-type(3) .border-3 {
@@ -1510,6 +1542,15 @@ footer {
 
 }
 //slider
+.slick-slide {
+  display: none;
+  /* float: left; */
+  height: 100%;
+  min-height: 1px;
+  img {
+    margin: auto;
+  }
+}
 .slick-dots {
   bottom: -40px;
   li {
@@ -1617,7 +1658,7 @@ footer {
 .block-6 .more {
   display: block;
   padding: 9px 7px;
-  margin-top: 4px;
+  margin-top: 10px;
   width: 25px;
   line-height: 25px;
 }
@@ -1646,10 +1687,14 @@ footer {
     bottom: -43px;
     width: 100%;
     height: 140px;
-    background: -moz-linear-gradient(top, rgba(238,247,250,0) 0%, rgba(238,247,250,0) 2%, rgba(238,247,250,0.66) 23%, rgba(238,247,250,0.86) 60%, rgba(238,247,250,1) 98%, rgba(238,247,250,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(238,247,250,0) 0%,rgba(238,247,250,0) 2%,rgba(238,247,250,0.66) 23%,rgba(238,247,250,0.86) 60%,rgba(238,247,250,1) 98%,rgba(238,247,250,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(238,247,250,0) 0%,rgba(238,247,250,0) 2%,rgba(238,247,250,0.66) 23%,rgba(238,247,250,0.86) 60%,rgba(238,247,250,1) 98%,rgba(238,247,250,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00eef7fa', endColorstr='#eef7fa',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(235,247,250,0.65) 42%, rgba(235,247,250,1) 99%, rgba(235,247,250,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(235,247,250,0.65) 42%,rgba(235,247,250,1) 99%,rgba(235,247,250,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(235,247,250,0.65) 42%,rgba(235,247,250,1) 99%,rgba(235,247,250,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#ebf7fa',GradientType=0 ); /* IE6-9 */
+    //background: -moz-linear-gradient(top, rgba(238,247,250,0) 0%, rgba(238,247,250,0) 2%, rgba(238,247,250,0.66) 23%, rgba(238,247,250,0.86) 60%, rgba(238,247,250,1) 98%, rgba(238,247,250,1) 100%); /* FF3.6-15 */
+    //background: -webkit-linear-gradient(top, rgba(238,247,250,0) 0%,rgba(238,247,250,0) 2%,rgba(238,247,250,0.66) 23%,rgba(238,247,250,0.86) 60%,rgba(238,247,250,1) 98%,rgba(238,247,250,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    //background: linear-gradient(to bottom, rgba(238,247,250,0) 0%,rgba(238,247,250,0) 2%,rgba(238,247,250,0.66) 23%,rgba(238,247,250,0.86) 60%,rgba(238,247,250,1) 98%,rgba(238,247,250,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00eef7fa', endColorstr='#eef7fa',GradientType=0 ); /* IE6-9 */
   }
 }
 //readmore
@@ -1689,7 +1734,7 @@ footer {
 .ever-popup-build {
   flex-direction: row;
   background: white;
-  border-radius: 10px;
+  border-radius: 0px;
   border: 3px solid $blue;
   .form-product {
     text-align: center;
@@ -1702,7 +1747,7 @@ footer {
     h1 {
       text-align: center;
       font-size: 26px;
-      padding: 20px;
+      padding: 10px 0;
       font-weight: bold;
     }
   }
@@ -1710,6 +1755,15 @@ footer {
     width: 46%;
     margin-top: 0;
     background: transparent;
+    border-radius: 0;
+    form  {
+      .prices {
+        .old-price, .current-price {
+          border-radius: 0;
+        }
+      }
+
+    }
     form .order {
       padding: 22px 0;
     }

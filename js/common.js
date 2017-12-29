@@ -99,23 +99,23 @@ $(document).ready(function () {
         $(this).toggleClass( "active" );
     });
 
+    'use strict';
 
-   setTimeout(() => {
+    setTimeout(function () {
 
-       $('article').readmore({
-           maxHeight: 325,
-           moreLink: '<button class="more"><img src="images/arrow-more.png" alt=""></button>',
-           lessLink: '<button class="more"><img src="images/arrow-more.png" alt=""></button>'
+        $('article').readmore({
+            maxHeight: 325,
+            moreLink: '<button class="more"><img src="/cdn/1065/images/arrow-more.png" alt=""></button>',
+            lessLink: '<button class="more"><img src="/cdn/1065/images/arrow-more.png" alt=""></button>'
 
-       });
-       $('.comment p').readmore({
-           maxHeight: 110,
-           moreLink: '<button class="more"><img src="images/arrow-more.png" alt=""></button>',
-           lessLink: '<button class="more"><img src="images/arrow-more.png" alt=""></button>'
+        });
+        $('.comment p').readmore({
+            maxHeight: 110,
+            moreLink: '<button class="more"><img src="/cdn/1065/images/arrow-more.png" alt=""></button>',
+            lessLink: '<button class="more"><img src="/cdn/1065/images/arrow-more.png" alt=""></button>'
 
-       });
-   }, )
-
+        });
+    });
 
 
 
