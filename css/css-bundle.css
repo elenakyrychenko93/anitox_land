@@ -175,7 +175,7 @@ strong {
             position: absolute;
             content: "";
             background: white;
-            width: 50%;
+            width: 90%;
             height: 1px;
             left: 0;
             top: 0;
@@ -347,7 +347,7 @@ strong {
         text-align: left;
         font-size: 38px;
         line-height: 38px;
-        max-width: 630px; }
+        max-width: 650px; }
         .block-1 .block1-content .right-block h1 .product-name {
           font-weight: bold; }
       .block-1 .block1-content .right-block h2 {
@@ -591,6 +591,7 @@ strong {
           .block-3 .container .consist div ul li p {
             padding-top: 20px;
             font-weight: normal;
+            text-align: left;
             opacity: 0;
             -webkit-transition: 0.3s;
             -o-transition: 0.3s;
@@ -780,10 +781,10 @@ strong {
         background: url("../images/list-become.png") no-repeat; }
 
 .block-5 {
-  background-color: #e7f2f5;
+  background-color: #ebf7fa;
   background-image: url("../images/block-5-backgr.png");
   background-repeat: no-repeat;
-  background-position: -559px -81px;
+  background-position: -559px 125px;
   position: relative;
   padding: 120px 0 135px; }
   .block-5:before {
@@ -876,7 +877,8 @@ strong {
         .block-6 .slider-comments .slide .author .author-name {
           margin-top: 15px; }
           .block-6 .slider-comments .slide .author .author-name span.age {
-            white-space: nowrap; }
+            white-space: nowrap;
+            display: block; }
       .block-6 .slider-comments .slide .comment {
         display: inline-block;
         width: 78%;
@@ -1851,6 +1853,8 @@ footer {
     margin-bottom: 0; }
     .block-9 .flex-wrapper .right {
       display: none; }
+  .block-11 {
+    padding-right: 0; }
   footer {
     padding: 30px 20px; }
     footer .flex-wrapper .right {
@@ -2046,7 +2050,9 @@ footer {
       .block-1 header .menu ul li:not(:first-of-type) {
         margin: 0; }
     .block-1 header .menu ul li:not(:first-of-type) {
-      margin-left: 0px; } }
+      margin-left: 0px; }
+  .block-11 .about-product {
+    padding: 20px 20px 0px 20px !important; } }
 
 @media screen and (max-width: 360px) {
   .block-8 .container > p {

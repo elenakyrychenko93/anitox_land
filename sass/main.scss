@@ -193,7 +193,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
             position: absolute;
             content: "";
             background: white;
-            width:50%;
+            width:90%;
             height: 1px;
             left:0;
             top:0;
@@ -427,7 +427,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
         text-align: left;
         font-size: 38px;
         line-height: 38px;
-        max-width: 630px;
+        max-width: 650px;
         .product-name {
           font-weight: bold;
           //font-family: 'Roboto Bold';
@@ -729,6 +729,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
             p {
               padding-top: 20px;
               font-weight: normal;
+              text-align: left;
               opacity: 0;
               transition: 0.3s;
             }
@@ -972,10 +973,10 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
 }
 
 .block-5 {
-  background-color: $blue-backgr;
+  background-color: #ebf7fa;
   background-image: url("../images/block-5-backgr.png");
   background-repeat: no-repeat;
-  background-position: -559px -81px;
+  background-position: -559px 125px;
   position: relative;
   padding: 120px 0 135px;
 
@@ -1115,6 +1116,7 @@ $gradient: linear-gradient(to right, #f7de42 19%,#ffc807 68%);
           margin-top: 15px;
           span.age {
             white-space: nowrap;
+            display: block;
           }
         }
       }

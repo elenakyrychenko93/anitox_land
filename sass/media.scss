@@ -627,6 +627,9 @@
           }
         }
     }
+    .block-11 {
+      padding-right: 0;
+    }
     footer {
       padding: 30px 20px;
       .flex-wrapper {
@@ -940,6 +943,11 @@
           }
         }
       }
+    }
+  }
+  .block-11 {
+    .about-product {
+      padding: 20px 20px 0px 20px!important;
     }
   }
 }
